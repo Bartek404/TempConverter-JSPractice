@@ -13,11 +13,20 @@ body {
 	height: 100vh;
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
-	background-color: #1e1d23;
 	font-size: 24px;
+	background: linear-gradient(206deg, #27374d, #526d82, #9db2bf);
+    background-size: 600% 600%;
+    -webkit-animation: backgroundAnimation 30s ease infinite;
+    -moz-animation: backgroundAnimation 30s ease infinite;
+    -o-animation: backgroundAnimation 30s ease infinite;
+    animation: backgroundAnimation 30s ease infinite;
 }
 
-
+.btns {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
 
 .result {
 	margin-bottom: 50px;
@@ -51,4 +60,25 @@ button {
 button:hover {
     background-color: #ddd;
 	color: #000;
+}
+
+@-webkit-keyframes backgroundAnimation {
+    0%{background-position:72% 0%}
+    50%{background-position:29% 100%}
+    100%{background-position:72% 0%}
+}
+@-moz-keyframes backgroundAnimation {
+    0%{background-position:72% 0%}
+    50%{background-position:29% 100%}
+    100%{background-position:72% 0%}
+}
+@-o-keyframes backgroundAnimation {
+    0%{background-position:72% 0%}
+    50%{background-position:29% 100%}
+    100%{background-position:72% 0%}
+}
+@keyframes backgroundAnimation {
+    0%{background-position:72% 0%}
+    50%{background-position:29% 100%}
+    100%{background-position:72% 0%}
 }
